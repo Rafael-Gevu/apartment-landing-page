@@ -17,6 +17,7 @@ for (let i = 0; i < images.length; i++) {
         description.textContent = images[i].getAttribute('description')
     })
 }
+
 exitModal.addEventListener('click', function(){
     modal.classList.add('display-none')
 })
@@ -29,8 +30,10 @@ nextArrow.addEventListener('click', function () {
     modalImage.src = images[currentImage].src
     description.textContent = images[currentImage].getAttribute('description')
     })
+
 prevArrow.addEventListener('click', function () {
     if(currentImage === 0){
+
         currentImage = images.length
     }
     currentImage--
@@ -49,7 +52,6 @@ amenitiesMenu.forEach(menu => {
             menu.nextElementSibling.classList.add('display-none')
             menu.querySelector('.up-angle').classList.add('display-none')
             menu.querySelector('.down-angle').classList.remove('display-none')
-        }
-        
+        }        
     })
 })

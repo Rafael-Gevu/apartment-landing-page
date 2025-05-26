@@ -118,6 +118,7 @@ header {
     cursor: pointer;
     opacity: .4;
 }
+
 .modal{
     background-color: rgba(255, 255, 255, 0.6);
     width: 100vw;
@@ -205,6 +206,7 @@ header {
 .bathroom, .room-laundry, .entertainment, .climatizing, .internet, .kitchen-dining-room, .location-features, .outdoor, .parking{
     display: flex;
     flex-direction: column;
+    
     gap: 10px;
     background-color: transparent;
     border-radius: 15px;
