@@ -10,43 +10,45 @@
     <link rel="stylesheet" href="./src/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 
-<body>
-    <section class="home">
-        <header>
+    <a href="http://wa.me/5521996192305" target="_blank"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+    <a target="_blank"
+        href="https://www.airbnb.com.br/rooms/1034222837155912389?search_mode=regular_search&adults=1&source_impression_id=p3_1748278631_P3AVfI9t7BDUmwzx&previous_page_section_name=1000&federated_search_id=8b62077a-2f24-493c-a949-8843322f7cae&guests=1"><i
+            class="fa-brands fa-airbnb airbnb-icon"></i></a>
+    <section class="home" id="home">
+        <header class="header">
             <h1 class="main-text">Férias tranquilas <br> começam com conforto <br> e segurança.</h1>
             <nav>
+                <span class="material-icons close-burger-menu">close</span> 
+                <span class="material-icons burger-menu">menu</span> 
                 <ul class="menu">
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#comodidades">Comodidades</a></li>
-                    <li><a href="#localização">Localização</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#reserva">Reserva</a></li>
-                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
         <div class="overlay">
             <img src="./src/images/beach.jpeg" class="beach-image" alt="beach-image">
         </div>
+
     </section>
+    <section id="galeria">
+        <h3 class="intro-text">Apenas a 100 metros da praia do forte, este apartamento é ideal para as férias da sua
+            família. Com três
+            quartos espaçosos, um deles com ar-condicionado, dois banheiros modernos, Wi-Fi rápido, cozinha
+            totalmente
+            equipada e uma sala acolhedora com TV Smart, oferece o cenário perfeito para uma estadia inesquecível.
+            Desfrute do conforto e da proximidade com a natureza neste refúgio à beira-mar. Seu lar longe de casa
+            está
+            aqui.</h3>
 
-    <div class="about-pictures">
-        <section class="sobre">
-            <h3 class="about-text">Apenas a 100 metros da praia do forte, este apartamento é ideal para as férias da sua
-                família. Com três
-                quartos espaçosos, um deles com ar-condicionado, dois banheiros modernos, Wi-Fi rápido, cozinha
-                totalmente
-                equipada e uma sala acolhedora com TV Smart, oferece o cenário perfeito para uma estadia inesquecível.
-                Desfrute do conforto e da proximidade com a natureza neste refúgio à beira-mar. Seu lar longe de casa
-                está
-                aqui.</h3>
-        </section>
-
-        <section class="gallery">
+        <div class="image-gallery">
             <div class="gallery-container">
                 <img src="./src/images/balcony.jpeg" alt="balcony-image" class="images" description="varanda">
                 <img src="./src/images/window.jpeg" alt="window-image" class="images"
@@ -70,182 +72,217 @@
                 <img src="./src/images/second-bathroom.jpeg" alt="second-bathroom" class="images"
                     description="banheiro secundário">
             </div>
-
-        </section>
-    </div>
+        </div>
+    </section>
     <div class="modal display-none">
         <div class="modal-container">
-            <i class="fa-regular fa-circle-xmark"></i>
+            <span class="material-icons close-icon">close</span>
             <img class="modal-image" src="./src/images/window.jpeg">
             <div class="image-description"></div>
         </div>
         <div class="arrows">
-            <i class="fa-solid fa-arrow-left"></i>
-            <i class="fa-solid fa-arrow-right"></i>
+            <span class="material-icons arrow-back">arrow_back</span>
+            <span class="material-icons arrow-forward">arrow_forward</span>
         </div>
     </div>
-    <h2 class="amenities-text">Comodidades</h2>
-    <section class="comodidades">        
+
+    <section id="comodidades">
+        <h2 class="amenities-text">Comodidades</h2>
+        <div class="amenities-container">
+
             <div class="bathroom">
                 <div class="amenities-menu">
                     <h3>Banheiro</h3>
-                    <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                    <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
                 </div>
-                <ul class="amenities display-none">
-                    <li class="amenities-list"><i class="fas fa-toilet-paper"></i>Produtos de higiene pessoal</li>
-                    <li class="amenities-list"><i class="fas fa-soap"></i>Sabonete para o corpo</li>
-                    <li class="amenities-list"><i class="fas fa-shower"></i>Chuveiro externo</li>
-                    <li class="amenities-list"><i class="fas fa-bath"></i>Água quente</li>
+                <ul class="amenities display-none">                    
+                    <li class="amenities-list"><span class="material-icons">soap</span></i>Sabonete</li>
+                    <li class="amenities-list"><span class="material-icons">shower</span>Chuveiro externo</li>
+                    <li class="amenities-list"><span class="material-icons">thermostat</span>Água quente</li>
                 </ul>
             </div>
+
             <div class="room-laundry">
                 <div class="amenities-menu">
                     <h3>Quarto e lavanderia</h3>
-                    <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                    <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+
                 </div>
                 <ul class="amenities display-none">
-
-                    <li class="amenities-list"><img src="./src/icons/clothes-hanger.png" width="18px"
-                            height="16px">Cabides
-                    </li>
-                    <li class="amenities-list"><img src="./src/icons/drapes.png" width="20px" height="16px">Blackout nas
-                        cortinas</li>
-                    <li class="amenities-list"><img src="./src/icons/ironing-clothes.png" width="20px"
-                            height="16px">Ferro
-                        de passar</li>
-                    <li class="amenities-list"><img src="./src/icons/hanging-dry.png" width="20px" height="16px">Varal
-                        para
-                        secar roupas</li>
-                    <li class="amenities-list"><img src="./src/icons/mosquito.png" width="20px"
-                            height="16px">Mosquiteiro
-                    </li>
-                    <li class="amenities-list"><img src="./src/icons/clothes.png" width="20px" height="16px">Local para
-                        guardar as roupas: guarda-roupa e cômoda</li>
+                    <li class="amenities-list"><span class="material-icons">checkroom</span>Cabides</li>
+                    <li class="amenities-list"><span class="material-icons">curtains</span>Blackout nas cortinas</li>
+                    <li class="amenities-list"><span class="material-icons">iron</span>Ferro de passar</li>
+                    <li class="amenities-list"><span class="material-icons">dry_cleaning</span>Varal para secar roupas</li>                
+                    <li class="amenities-list"><span class="material-icons">door_sliding</span>Local para guardar as roupas: guarda-roupa e cômoda</li>
                 </ul>
             </div>
 
             <div class="entertainment">
                 <div class="amenities-menu">
                     <h3>Entretenimento</h3>
-                    <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                    <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
                 </div>
                 <ul class="amenities display-none">
-                    <li class="amenities-list"><i class="fa-solid fa-tv"></i>TV de alta definição de 43 polegadas com
-                        
-                        Amazon
-                        Prime Video, Disney+, Netflix</li>
-                    <li class="amenities-list"><i class="fa-solid fa-table-tennis-paddle-ball"></i>Mesa de ping pong
+                    <li class="amenities-list"><span class="material-icons">tv</span>TV de alta definição de 43 polegadas com Amazon Prime Video, Disney+, Netflix</li>
+                    <li class="amenities-list"><span class="material-icons">scoreboard</span>Sala de jogos</li>
+                </ul>
+            </div>
+
+            <div class="climatizing">
+                <div class="amenities-menu">
+                    <h3>Climatização</h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+                </div>
+                <ul class="amenities display-none">
+                    <li class="amenities-list"><span class="material-icons">ac_unit</span>Ar condicionado</li>
+                    <li class="amenities-list"><span class="material-icons">wind_power</span></i>Ventiladores de teto</li>
+                </ul>
+            </div>
+
+            <div class="internet">
+                <div class="amenities-menu">
+                    <h3>internet e Escritório</h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+                </div>
+                <ul class="amenities display-none">
+                    <li class="amenities-list"><span class="material-icons">wifi</span>Wi-Fi</li>
+                </ul>
+            </div>
+
+            <div class="kitchen-dining-room">
+                <div class="amenities-menu">
+                    <h3>Cozinha e Sala de Jantar</h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+                </div>
+                <ul class="amenities display-none">                
+                    <li class="amenities-list"><img src="./src/icons/skillet.png" class="material-icons">Utensílios de cozinha</li>
+                    <li class="amenities-list"><span class="material-icons">kitchen</span>Refrigerador com freezer</li>
+                    <li class="amenities-list"><span class="material-icons">microwave</span>Microondas</li>
+                    <li class="amenities-list"><span class="material-icons">flatware</span>Talheres e louças</li>
+                    <li class="amenities-list"><img src="./src/icons/oven.png" class="material-icons">Fogão e forno a gás</li>            
+                    <li class="amenities-list"><span class="material-icons">coffee_maker</span>Chaleira/cafeteira</li>
+                    <li class="amenities-list"><span class="material-icons">wine_bar</span>Taças</li>
+                    <li class="amenities-list"><span class="material-icons">bakery_dining</span>Assadeira
                     </li>
-                    <li class="amenities-list"><img src="./src/icons/foosball.png" width="20px" height="16px">Sala de
-                        jogos
+                    <li class="amenities-list"><span class="material-icons">blender</span>Liquidificador</li>
+                    <li class="amenities-list"><span class="material-icons">table_restaurant</span>Mesa de Jantar</li>
+                </ul>
+            </div>
+
+            <div class="location-features">
+                <div class="amenities-menu">
+                    <h3>Características da Localização</h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+                </div>
+
+                <ul class="amenities display-none">
+                    <li class="amenities-list"><span class="material-icons">beach_access</span>Acesso à praia (à beira-mar)</li>
+                </ul>
+            </div>
+
+            <div class="outdoor">
+                <div class="amenities-menu">
+                    <h3>Ar Livre</h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+                </div>
+                <ul class="amenities display-none">
+                    <li class="amenities-list"><span class="material-icons">balcony</span>Varanda privativa</li>
+                    <li class="amenities-list"><span class="material-icons">nature_people</span>Quintal compartilhado — totalmente cercado</li>
+                </ul>
+            </div>
+
+            <div class="parking">
+                <div class="amenities-menu">
+                    <h3>Estacionamento</h3>
+                    <h3 class="down-angle"><span class="material-icons">keyboard_arrow_down</span></h3>
+                    <h3 class="up-angle display-none"><span class="material-icons">keyboard_arrow_up</span></h3>
+
+                </div>
+                <ul class="amenities display-none">
+                    <li class="amenities-list"><span class="material-icons">garage</span>Direito a uma vaga na garagem do
+                        condomínio
                     </li>
                 </ul>
             </div>
-        <div class="climatizing">
-            <div class="amenities-menu">
-                <h3>Climatização</h3>
-                <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></i></h3>
-                <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
-            </div>
-            <ul class="amenities display-none">
-                <li class="amenities-list"><i class="fa-solid fa-temperature-low"></i>Ar condicionado</li>
-                <li class="amenities-list"><i class="fa-solid fa-fan"></i>Ventiladores de teto</li>
-            </ul>
-        </div>
-        <div class="internet">
-            <div class="amenities-menu">
-                <h3>internet e Escritório</h3>
-                <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
-            </div>
-            <ul class="amenities display-none">
-                <li class="amenities-list"><i class="fa-solid fa-wifi"></i>Wi-Fi</li>
-            </ul>
-        </div>
 
-        <div class="kitchen-dining-room">
-            <div class="amenities-menu">
-                <h3>Cozinha e Sala de Jantar</h3>
-                <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
-            </div>
-            <ul class="amenities display-none">
-                <li class="amenities-list"><i class="fa-solid fa-kitchen-set"></i>Utensílios de cozinha</li>
-                <li class="amenities-list"><img src="./src/icons/refrigerator.png" width="20px"
-                        height="16px">Refrigerador com freezer</li>
-                <li class="amenities-list"><img src="./src/icons/microwave-oven.png" width="20px"
-                        height="16px">Microondas</li>
-                <li class="amenities-list"><i class="fa-solid fa-utensils"></i>Talheres e louças</li>
-                <li class="amenities-list"><i class="fa-solid fa-fire-burner"></i>Fogão a gás</li>
-
-                <li class="amenities-list"><img src="./src/icons/oven.png" width="20px" height="16px">Forno de aço
-                    inoxidável</li>
-                <li class="amenities-list"><img src="./src/icons/teapot.png" width="20px"
-                        height="16px">Chaleira/cafeteira</li>
-                <li class="amenities-list"><i class="fa-solid fa-wine-glass"></i>Taças</li>
-                <li class="amenities-list"><img src="./src/icons/bread.png" width="20px" height="16px">Assadeira
-                </li>
-                <li class="amenities-list"><i class="fa-solid fa-blender"></i>Liquidificador</li>
-                <li class="amenities-list"><img src="./src/icons/dinner-table.png" width="20px" height="16px">Mesa
-                    de
-                    Jantar</li>
-            </ul>
         </div>
-
-        <div class="location-features">
-            <div class="amenities-menu">
-                <h3>Características da Localização</h3>
-                <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
-            </div>
-            <ul class="amenities display-none">
-                <li class="amenities-list"><i class="fa-solid fa-umbrella-beach"></i>Acesso à praia (à beira-mar)
-                </li>
-            </ul>
-        </div>
-
-        <div class="outdoor">
-            <div class="amenities-menu">
-                <h3>Ar Livre</h3>
-                <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
-            </div>
-            <ul class="amenities display-none">
-                <li class="amenities-list"><img src="./src/icons/balcony.png" width="20px" height="16px">Varanda
-                    privativa
-                </li>
-                <li class="amenities-list"><img src="./src/icons/garden.png" width="20px" height="16px">Quintal
-                    compartilhado — totalmente cercado</li>
-            </ul>
-        </div>
-        <div class="parking">
-            <div class="amenities-menu">
-                <h3>Estacionamento</h3>
-                <h3 class="down-angle"><i class="fa-solid fa-angle-down"></i></h3>
-                <h3 class="up-angle display-none"><i class="fa-solid fa-angle-up"></i></h3>
-            </div>
-            <ul class="amenities display-none">
-                <li class="amenities-list"><i class="fa-solid fa-car"></i>Direito a uma vaga na garagem do
-                    condomínio
-                </li>
-            </ul>
-        </div>
-        
-    </section>
-    <section class="localização">
-
     </section>
 
-    <section class="depoimentos">
-
+    <section  id="localizacao">
+        <h2 class="location-text">Localização</h2>
+        <div class="location-map">
+            <picture>
+                <source media="(max-width:425px)" srcset="./src/images/map-responsive.png" alt="map" class="map">
+                <img src="./src/images/map.png" class="map" alt="map">
+            </picture>
+            
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
     </section>
-    <section class="reserva">
 
-    </section>
-    <section class="contato">
+    <section  id="depoimentos">
+        <h2 class="reviews-text">Depoimentos</h2>
+        <div class="reviews-area">
+            <div class="review">
+                <h4 class="reviewer-name">Laura</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>Ótima estadia! Apartamento excelente, nos acomodou muito bem durante o réveillon, Rafael muito
+                    proativo e nos deu suporte, Luciene e Manoel síndicos do prédio que nos receberam são muito
+                    simpáticos! Localização e infraestrutura muito boas! Nada a reclamar, com certeza voltaremos.</p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">Maristela</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>O apartamento correspondeu às expectativas, conforme o anúncio. Anfitrião atento às dúvidas e
+                    orientações, respondeu com prontidão. Fomos recebidas pelo zelador Manoel e sua esposa Luciene que
+                    foram muito atenciosos e eficientes.
+                    Excelente estadia.</p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">Luciano</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>Perto da praia, tudo organizado, apartamento grande, recomendo demais!</p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">Avanuzia</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>Ambiente agradável, bem perto da praia das Dunas rua bem tranquila ,Rafael muito solícito educado ,
+                    foi flexível quanto ao check-in e check-out ,dona Luciene um amor de pessoa,entrada tranquila no
+                    prédio.Super recomendo este apartamento.Enfim gratidão Rafael e dona Luciene.</p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">Gabrielle</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>Ótima estadia, apartamento aconchegante, Anfitrião respondeu todas as mensagens rapidamente, Seu
+                    Manoel e Dona Luciene super gente boa, recomendo</p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">Daniel</h4>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>acomodação muito boa, perto da praia e a parte mais tranquila dela, tudo muito organizado e limpo</p>
+            </div>
+
+        </div>
 
     </section>
 

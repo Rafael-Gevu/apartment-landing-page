@@ -1,0 +1,77 @@
+@media (max-width: 425px) {
+    .home {
+        width: 100vw;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 28px;
+    }
+
+    .main-text {
+        font-size: 27px;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .menu {
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        position: absolute;
+        top: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        visibility: hidden;
+    }
+
+    .menu li a {
+        color: #fff;
+    }
+
+
+    .material-icons.burger-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .material-icons.close-burger-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        width: 350px;
+        margin: auto;
+    }
+
+    .images {
+        width: 500px;
+        height: 200px;
+        margin: auto;
+     }   
+
+     .modal-image {
+        width: 300px;
+        height: 400px;
+     }
+
+     .arrows{
+        width: 380px;
+      }   
+
+    .fa-solid.fa-location-dot{
+        display: none;
+    }
+    .reviews-area{
+        grid-template-columns: 1fr;
+     }   
+}

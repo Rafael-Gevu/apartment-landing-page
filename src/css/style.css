@@ -1,10 +1,37 @@
 body {
     font-family: "Playfair Display", serif;
     background: linear-gradient(to bottom right, #e9f9fb, #dceeff);
-
 }
 
 
+
+
+
+.whatsapp-icon{
+    font-size: 40px;
+    color: #fff;
+    background-color: #25D366;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    z-index: 1;
+    position: fixed;
+    bottom: 70px;
+    right: 70px;    
+}
+
+.airbnb-icon {
+    font-size: 40px;
+    color: #fff;
+    background-color: #FD365B;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    z-index: 1;
+    position: fixed;
+    bottom: 70px;
+    right: 140px; 
+}
 
 
 .beach-image {
@@ -15,8 +42,6 @@ body {
 }
 
 .overlay {
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -46,7 +71,7 @@ body {
     }
 }
 
-header {
+.header {
     display: flex;
     width: 100%;
     height: 80px;
@@ -56,13 +81,12 @@ header {
     color: #fff;
 }
 
-
 .main-text {
     margin-top: 70px;
     font-size: 70px;
 }
 
-.menu {
+.menu{
     display: flex;
     gap: 10px;
 }
@@ -75,52 +99,54 @@ header {
     border-radius: 20px;
 }
 
+.material-icons.burger-menu, .material-icons.close-burger-menu{
+    display: none;
+}
 .menu li a:hover {
     background-color: #fff;
     color: #1356B8;
 }
 
-.about-pictures {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 60px;
+/* Galeria */
+
+#galeria{
+    margin: 50px 0px 50px 0px;
 }
 
-.sobre {
-    
-}
-
-.about-text{
+.intro-text{
     color: #4d97ac;
     font-size: 27px;
     text-align: center;
+    padding: 10px;
 }
-
-.gallery {
+.image-gallery {
     margin-top: 50px;    
     width: 100vw;
     overflow: scroll;
     position: relative;
 }
+
 .gallery-container{
     display: flex;
-    
     gap: 10px;;
 }
+
 .images{
     width: 300px;
+
     border-radius: 15px;
     transition: ease-in-out 0.2s;
 }
+
 .images:hover {
     cursor: pointer;
     opacity: .4;
 }
 
+  /* modal */
+
 .modal{
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(2, 1, 1, 0.6);
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -143,13 +169,16 @@ header {
 
 .image-description{
     font-size: 20px;
+
     font-weight: 800;
+    color: #fff;
 }
 
 .modal-image{
     height: 700px;
     width: 500px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
 
 .modal.display-none{
@@ -163,26 +192,34 @@ header {
     justify-content: space-between;
     font-size: 60px;
     z-index: 11;
-    color: #4d97ac;
+    color: #4d97ac
 }
 
-.fa-regular.fa-circle-xmark{
+.material-icons.arrow-back, .material-icons.arrow-forward{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 100%;
     font-size: 40px;
+    cursor: pointer;
+}
+
+.material-icons.close-icon{
+    font-size: 40px;
+
     cursor: pointer;
     align-self: flex-end;
     color: #4d97ac;
     background-color: #fff;
     border-radius: 100%;
-}
-
-.fa-solid.fa-arrow-right, .fa-solid.fa-arrow-left{
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 100%;
-    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
 
 /* comodidades */
+
+#comodidades{
+    margin: 50px 0px 50px 0px;
+}
 
 .amenities-text{
     font-size: 30px;
@@ -190,28 +227,27 @@ header {
     padding-left: 40px;
 }
 
+.amenities-container{
+    display: grid;
+    grid-gap: 15px;
+    padding: 50px 70px 0px 70px;
+}
+
+
 .amenities-menu{
     display: flex;
     justify-content: space-between;    
     cursor: pointer;
 }
 
- .comodidades{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding: 70px;
-} 
-
-.bathroom, .room-laundry, .entertainment, .climatizing, .internet, .kitchen-dining-room, .location-features, .outdoor, .parking{
+ .bathroom, .room-laundry, .entertainment, .climatizing, .internet, .kitchen-dining-room, .location-features, .outdoor, .parking{
     display: flex;
     flex-direction: column;
-    
     gap: 10px;
     background-color: transparent;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
 
 .amenities{
@@ -223,9 +259,77 @@ header {
 .amenities-list{
     display: flex;
     gap: 10px;
-    align-items: baseline
+    align-items: center;
 }
 
 .display-none{
     display: none;
+}
+
+/* localizacao */
+
+#localizacao{
+    margin: 50px 0px 50px 0px;
+}
+
+.location-text{
+    font-size: 30px;
+    color: #4d97ac;
+    padding-left: 40px;
+}
+
+.location-map{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px 0px 70px 0px;
+}
+
+.map{ 
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+
+.fa-solid.fa-location-dot{
+
+    font-size: 40px;
+    position: absolute;
+    color: #FD008E;
+    top: 240px;
+}
+
+/* Depoimentos */
+
+#depoimentos{
+    margin: 50px 0px 50px 0px;
+}
+.reviews-text{
+    font-size: 30px;
+
+    color: #4d97ac;
+    padding-left: 40px;
+}
+
+.reviews-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 50px 70px 70px 70px;
+}
+
+.stars{
+    color: #F3B11B;
+    display: flex;
+    gap: 2px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
