@@ -33,6 +33,7 @@ Na seção de comodidades, um efeito de acordeão permite ao usuário explorar o
 Caso deseje mais informações ou queira realizar uma reserva, o usuário pode clicar no ícone do Airbnb para ser redirecionado à plataforma, ou no ícone do WhatsApp para entrar em contato direto com o proprietário e esclarecer eventuais dúvidas.
 
 ### Ferramentas
+
 O site foi desenvolvido utilizando HTML5, CSS3 e JavaScript. As imagens foram fornecidas pelo proprietário, enquanto as fontes e os ícones foram obtidos por meio do Google Fonts e FontAwesome. Os depoimentos e as comodidades foram extraídos diretamente da página do apartamento no Airbnb.
 
 A responsividade para dispositivos móveis foi implementada com o uso de media queries, garantindo uma boa experiência em diferentes tamanhos de tela.
@@ -49,7 +50,7 @@ No final, o projeto representou uma excelente oportunidade para aprimorar minhas
 - JavaScript
 
 ### Link
-https://apartment-landing-page-9ppx4vj5k-rafaels-projects-3b81a1b9.vercel.app
+https://apartment-landing-page-k8xenihnc-rafaels-projects-3b81a1b9.vercel.app
 
 ### Autor
 Rafael Gevu
