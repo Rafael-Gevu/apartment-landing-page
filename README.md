@@ -24,7 +24,7 @@ Uma landing page responsiva de um apartamento disponível para locação.
 <img src="./src/images/screenshots/amenities-responsive-screenshot.png"width="300px"  alt="captura-de-tela-comodidades"> 
 <img src="./src/images/screenshots/location-screenshot.png" width="500px" alt="captura-de-tela-localizacao">
 <img src="./src/images/screenshots/reviews-screenshot.png" width="500px"  alt="captura-de-tela-depoimentos>
-<img src="./src/images/screenshots/location-reviews-responsive-screenshot.png" width="300px" alt="captura-de-tela-localizacao">
+
 
 ### Funcionalidades
 O usuário pode navegar pelos diferentes menus da página, que apresentam informações relevantes sobre o apartamento. Na seção de galeria, é possível visualizar as fotos disponíveis e abrir um modal que amplia a imagem, acompanhado da descrição do respectivo cômodo.
@@ -39,6 +39,7 @@ A responsividade para dispositivos móveis foi implementada com o uso de media q
 ### Destaques do Processo
 Os maiores desafios estiveram na criação do design da página, buscando transmitir a sensação de praia e a brisa típica da Região dos Lagos. A paleta de cores foi desenvolvida com base na imagem central do site — uma fotografia da praia próxima ao apartamento.
 O processo de adicionar ícones personalizados para cada uma das comodidades exigiu bastante atenção, assim como a criação da lógica de navegação no carrossel de imagens.
+
 No final, o projeto representou uma excelente oportunidade para aprimorar minhas habilidades em desenvolvimento Front-End, além de resultar em um projeto real para o portfólio: uma landing page funcional, que contribui para um processo de locação mais seguro e confiável. 
 
 ### Desenvolvido com
@@ -47,7 +48,7 @@ No final, o projeto representou uma excelente oportunidade para aprimorar minhas
 - JavaScript
 
 ### Link
-
+https://apartment-landing-page-9ppx4vj5k-rafaels-projects-3b81a1b9.vercel.app
 
 ### Autor
 Rafael Gevu
