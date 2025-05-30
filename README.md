@@ -23,7 +23,8 @@ Uma landing page responsiva de um apartamento disponível para locação.
 <img src="./src/images/screenshots/amenities-screenshot.png"width="500px"  alt="captura-de-tela-comodidades"> 
 <img src="./src/images/screenshots/amenities-responsive-screenshot.png"width="300px"  alt="captura-de-tela-comodidades"> 
 <img src="./src/images/screenshots/location-screenshot.png" width="500px" alt="captura-de-tela-localizacao">
-<img src="./src/images/screenshots/reviews-screenshot.png" width="500px"  alt="captura-de-tela-depoimentos>
+<img src="./src/images/screenshots/reviews-screenshot.png" width="500px"  alt="captura-de-tela-depoimentos">
+<img src="./src/images/screenshots/location-reviews-responsive-screenshot.png" width="300px"  alt="captura-de-tela-depoimentos">
 
 
 ### Funcionalidades
